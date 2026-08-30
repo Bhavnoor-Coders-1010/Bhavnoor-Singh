@@ -1,167 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Skills — Bhavnoor Singh</title>
-<meta name="description" content="Programming languages, libraries, frameworks, and tools used by Bhavnoor Singh." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills — Bhavnoor Singh</title>
+  <meta name="description" content="Programming languages, libraries, frameworks, and tools used by Bhavnoor Singh." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="Skills — Bhavnoor Singh" />
+  <meta property="og:description" content="Technical stack, languages, ML frameworks, and tools used by Bhavnoor Singh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bhavnoor-coders-1010.github.io/Bhavnoor-Singh/skills.html" />
+  <meta name="twitter:card" content="summary" />
 
-<link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<!-- ===== Navbar ===== -->
-<nav class="navbar">
-<div class="nav-container">
-<a href="index.html" class="nav-logo">
-<span class="logo-mark">BS</span>
-Bhavnoor Singh
-</a>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="experience.html">Experience</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</div>
-<button class="nav-toggle" aria-label="Toggle navigation">
-<span></span><span></span><span></span>
-</button>
-</div>
-</nav>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">BS</span>
+        Bhavnoor Singh
+      </a>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="sun-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-<div class="page-wrapper">
-<div class="page-content">
+  <div class="page-wrapper">
+    <main class="page-content">
 
-<!-- ===== Page Hero ===== -->
-<section class="page-hero">
-<div class="container">
-<h1 class="reveal">Skills & Tech Stack</h1>
-<p class="reveal reveal-delay-1">Tools and technologies I work with.</p>
-</div>
-</section>
+      <!-- ===== Page Hero ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="reveal">Skills & Tech Stack</h1>
+          <p class="reveal reveal-delay-1">Tools and technologies I work with.</p>
+        </div>
+      </section>
 
-<!-- ===== Programming Languages ===== -->
-<section class="section-sm">
-<div class="container">
-<div class="skills-category">
-<h2 class="reveal">Programming Languages</h2>
-<div class="skills-grid">
-<div class="card skill-card reveal">
-<div class="skill-name">Python</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="90"></div></div>
-</div>
-<div class="card skill-card reveal">
-<div class="skill-name">C++</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div>
-</div>
-<div class="card skill-card reveal">
-<div class="skill-name">JavaScript</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div>
-</div>
-<div class="card skill-card reveal">
-<div class="skill-name">Flutter / Dart</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
-</div>
-<div class="card skill-card reveal">
-<div class="skill-name">Bash</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="70"></div></div>
-</div>
-<div class="card skill-card reveal">
-<div class="skill-name">Verilog HDL</div>
-<div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
+      <!-- ===== Programming Languages ===== -->
+      <section class="section-sm">
+        <div class="container">
+          <div class="skills-category">
+            <h2 class="reveal">Programming Languages</h2>
+            <div class="skills-grid">
+              <div class="card skill-card reveal">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="90"></div></div>
+              </div>
+              <div class="card skill-card reveal">
+                <div class="skill-name">C++</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div>
+              </div>
+              <div class="card skill-card reveal">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div>
+              </div>
+              <div class="card skill-card reveal">
+                <div class="skill-name">Flutter / Dart</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
+              </div>
+              <div class="card skill-card reveal">
+                <div class="skill-name">Bash</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="70"></div></div>
+              </div>
+              <div class="card skill-card reveal">
+                <div class="skill-name">Verilog HDL</div>
+                <div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- ===== Libraries & Frameworks ===== -->
-<section class="section-sm">
-<div class="container">
-<div class="skills-category">
-<h2 class="reveal">Libraries & Frameworks</h2>
-<div class="tech-badges reveal">
-<span class="tech-badge"><span class="dot"></span> PyTorch</span>
-<span class="tech-badge"><span class="dot"></span> TensorFlow</span>
-<span class="tech-badge"><span class="dot"></span> Keras</span>
-<span class="tech-badge"><span class="dot"></span> OpenCV</span>
-<span class="tech-badge"><span class="dot"></span> Scikit-Learn</span>
-<span class="tech-badge"><span class="dot"></span> Pandas</span>
-<span class="tech-badge"><span class="dot"></span> NumPy</span>
-<span class="tech-badge"><span class="dot"></span> Matplotlib</span>
-<span class="tech-badge"><span class="dot"></span> Seaborn</span>
-<span class="tech-badge"><span class="dot"></span> MNE-Python</span>
-<span class="tech-badge"><span class="dot"></span> torchvision</span>
-</div>
-</div>
-</div>
-</section>
+      <!-- ===== Libraries & Frameworks ===== -->
+      <section class="section-sm">
+        <div class="container">
+          <div class="skills-category">
+            <h2 class="reveal">Libraries & Frameworks</h2>
+            <div class="tech-badges reveal">
+              <span class="tech-badge"><span class="dot"></span> PyTorch</span>
+              <span class="tech-badge"><span class="dot"></span> TensorFlow</span>
+              <span class="tech-badge"><span class="dot"></span> Keras</span>
+              <span class="tech-badge"><span class="dot"></span> OpenCV</span>
+              <span class="tech-badge"><span class="dot"></span> Scikit-Learn</span>
+              <span class="tech-badge"><span class="dot"></span> Pandas</span>
+              <span class="tech-badge"><span class="dot"></span> NumPy</span>
+              <span class="tech-badge"><span class="dot"></span> Matplotlib</span>
+              <span class="tech-badge"><span class="dot"></span> Seaborn</span>
+              <span class="tech-badge"><span class="dot"></span> MNE-Python</span>
+              <span class="tech-badge"><span class="dot"></span> torchvision</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- ===== Tools & Technologies ===== -->
-<section class="section-sm">
-<div class="container">
-<div class="skills-category">
-<h2 class="reveal">Tools & Technologies</h2>
-<div class="tech-badges reveal">
-<span class="tech-badge"><span class="dot"></span> Git</span>
-<span class="tech-badge"><span class="dot"></span> GitHub</span>
-<span class="tech-badge"><span class="dot"></span> SQL</span>
-<span class="tech-badge"><span class="dot"></span> MATLAB</span>
-<span class="tech-badge"><span class="dot"></span> LaTeX</span>
-<span class="tech-badge"><span class="dot"></span> OpenViBE</span>
-<span class="tech-badge"><span class="dot"></span> Figma</span>
-<span class="tech-badge"><span class="dot"></span> Docker</span>
-<span class="tech-badge"><span class="dot"></span> JMeter</span>
-<span class="tech-badge"><span class="dot"></span> Karate</span>
-<span class="tech-badge"><span class="dot"></span> FPGA</span>
-<span class="tech-badge"><span class="dot"></span> Arduino</span>
-</div>
-</div>
-</div>
-</section>
+      <!-- ===== Tools & Technologies ===== -->
+      <section class="section-sm">
+        <div class="container">
+          <div class="skills-category">
+            <h2 class="reveal">Tools & Technologies</h2>
+            <div class="tech-badges reveal">
+              <span class="tech-badge"><span class="dot"></span> Git</span>
+              <span class="tech-badge"><span class="dot"></span> GitHub</span>
+              <span class="tech-badge"><span class="dot"></span> SQL</span>
+              <span class="tech-badge"><span class="dot"></span> MATLAB</span>
+              <span class="tech-badge"><span class="dot"></span> LaTeX</span>
+              <span class="tech-badge"><span class="dot"></span> OpenViBE</span>
+              <span class="tech-badge"><span class="dot"></span> Figma</span>
+              <span class="tech-badge"><span class="dot"></span> Docker</span>
+              <span class="tech-badge"><span class="dot"></span> JMeter</span>
+              <span class="tech-badge"><span class="dot"></span> Karate</span>
+              <span class="tech-badge"><span class="dot"></span> FPGA</span>
+              <span class="tech-badge"><span class="dot"></span> Arduino</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- ===== Soft Skills ===== -->
-<section class="section-sm">
-<div class="container">
-<div class="skills-category">
-<h2 class="reveal">Soft Skills</h2>
-<div class="tech-badges reveal">
-<span class="tech-badge">Leadership</span>
-<span class="tech-badge">Mentoring</span>
-<span class="tech-badge">Technical Writing</span>
-<span class="tech-badge">Team Management</span>
-<span class="tech-badge">Event Organization</span>
-<span class="tech-badge">Public Speaking</span>
-</div>
-</div>
-</div>
-</section>
+      <!-- ===== Soft Skills ===== -->
+      <section class="section-sm">
+        <div class="container">
+          <div class="skills-category">
+            <h2 class="reveal">Soft Skills</h2>
+            <div class="tech-badges reveal">
+              <span class="tech-badge">Leadership</span>
+              <span class="tech-badge">Mentoring</span>
+              <span class="tech-badge">Technical Writing</span>
+              <span class="tech-badge">Team Management</span>
+              <span class="tech-badge">Event Organization</span>
+              <span class="tech-badge">Public Speaking</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</div>
+    </main>
 
-<!-- ===== Footer ===== -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<p>Designed & built by Bhavnoor Singh — © <span id="year"></span></p>
-<div class="footer-links">
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-</div>
-</footer>
-</div>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Designed & built by Bhavnoor Singh — &copy; <span id="year"></span></p>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

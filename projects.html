@@ -1,262 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Projects — Bhavnoor Singh</title>
-<meta name="description" content="Research projects, academic projects, and side builds by Bhavnoor Singh." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Bhavnoor Singh</title>
+  <meta name="description" content="Research projects, academic projects, and software builds by Bhavnoor Singh." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="Projects — Bhavnoor Singh" />
+  <meta property="og:description" content="Explore research and engineering projects by Bhavnoor Singh in Deep Learning, BCI, and Systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bhavnoor-coders-1010.github.io/Bhavnoor-Singh/projects.html" />
+  <meta name="twitter:card" content="summary" />
 
-<link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<!-- ===== Navbar ===== -->
-<nav class="navbar">
-<div class="nav-container">
-<a href="index.html" class="nav-logo">
-<span class="logo-mark">BS</span>
-Bhavnoor Singh
-</a>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="experience.html">Experience</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</div>
-<button class="nav-toggle" aria-label="Toggle navigation">
-<span></span><span></span><span></span>
-</button>
-</div>
-</nav>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">BS</span>
+        Bhavnoor Singh
+      </a>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="sun-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-<div class="page-wrapper">
-<div class="page-content">
+  <div class="page-wrapper">
+    <main class="page-content">
 
-<!-- ===== Page Hero ===== -->
-<section class="page-hero">
-<div class="container">
-<h1 class="reveal">Projects</h1>
-<p class="reveal reveal-delay-1">A collection of research projects, academic projects, and side builds.</p>
-</div>
-</section>
+      <!-- ===== Page Hero ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="reveal">Projects</h1>
+          <p class="reveal reveal-delay-1">A collection of research projects, academic projects, and software builds.</p>
+        </div>
+      </section>
 
-<!-- ===== Projects Grid ===== -->
-<section class="section-sm">
-<div class="container">
-<div class="projects-grid">
+      <!-- ===== Projects Section ===== -->
+      <section class="section-sm">
+        <div class="container">
 
-<!-- Project 1 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">Leveraging M1 Reward Signals for Adaptive BCI</a></h3>
-<span class="badge">SURGE</span>
-</div>
-<div class="project-meta">
-<span>Prof. Arjun Ramakrishnan</span>
-<span>·</span>
-<span>May 2025 – Jul 2025</span>
-</div>
-<ul class="project-desc">
-<li>Harness motor cortical (M1) reward signals to enhance real-time adaptability of BCIs, making them more realistic.</li>
-<li>Epoched EEG data using event markers, applied baseline correction and normalization for faster convergence.</li>
-<li>Trained LSTM, EEGNET, and DSCNN+LSTM models using categorical cross-entropy and Adam optimizer.</li>
-<li>Developing a state-of-the-art deep learning model quantifying M1 reward signals as an RL agent's reward function.</li>
-<li>Achieved a maximum accuracy of 45% using EEGNET, closely approaching performance of SOTA models.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">Python</span>
-<span class="tag">PyTorch</span>
-<span class="tag">LSTM</span>
-<span class="tag">EEGNET</span>
-<span class="tag">DSCNN+LSTM</span>
-<span class="tag">Reinforcement Learning</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-View on GitHub
-</a>
-</div>
+          <!-- Project Filters -->
+          <div class="project-filters reveal">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="deeplearning">Deep Learning & BCI</button>
+            <button class="filter-btn" data-filter="systems">Systems & Hardware</button>
+            <button class="filter-btn" data-filter="software">Software & Apps</button>
+          </div>
 
-<!-- Project 2 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">Mental Workload Localisation using N-Back Task</a></h3>
-<span class="badge">Research</span>
-</div>
-<div class="project-meta">
-<span>Prof. Arjun Ramakrishnan</span>
-<span>·</span>
-<span>May 2025 – Jul 2025</span>
-</div>
-<ul class="project-desc">
-<li>Conducting EEG analysis to identify neural signatures across cognitive load levels, from low-demand to high-intensity tasks.</li>
-<li>Preprocessed data by manually removing bad channels, applying Independent Component Analysis for eye artifact removal.</li>
-<li>Produced topomaps and average band power plots for delta through gamma bands for comparative frequency-band analysis.</li>
-<li>Plotted spectrograms for different channels estimating the effect of breaks and different mental workloads on EEG signals.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">Python</span>
-<span class="tag">MNE-Python</span>
-<span class="tag">EEG</span>
-<span class="tag">Signal Processing</span>
-<span class="tag">Matplotlib</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-View on GitHub
-</a>
-</div>
+          <div class="projects-grid">
 
-<!-- Project 3 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">IITK Mini MIPS — A Mini Processor</a></h3>
-<span class="badge">CS220</span>
-</div>
-<div class="project-meta">
-<span>Prof. Debapriya Basu Roy</span>
-<span>·</span>
-<span>Mar 2025 – Apr 2025</span>
-</div>
-<ul class="project-desc">
-<li>Designed instruction and data memory, and instruction decoder on FPGA with Verilog HDL, optimizing system performance.</li>
-<li>Implemented a 32-bit ALU in Verilog, supporting arithmetic, logical, shift, and jump operations as per the MIPS-32 ISA.</li>
-<li>Developed a structured data path and control logic, incorporating a finite state machine for efficient instruction execution.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">Verilog</span>
-<span class="tag">FPGA</span>
-<span class="tag">MIPS-32</span>
-<span class="tag">Digital Design</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-View on GitHub
-</a>
-</div>
+            <!-- Project 1 -->
+            <div class="card project-card reveal" data-category="deeplearning bci">
+              <div class="project-card-header">
+                <h3>Leveraging M1 Reward Signals for Adaptive BCI</h3>
+                <span class="badge">SURGE</span>
+              </div>
+              <div class="project-meta">
+                <span>Prof. Arjun Ramakrishnan</span>
+                <span>·</span>
+                <span>May 2025 – Jul 2025</span>
+              </div>
+              <ul class="project-desc">
+                <li>Harness motor cortical (M1) reward signals to enhance real-time adaptability of BCIs, making them more realistic.</li>
+                <li>Epoched EEG data using event markers, applied baseline correction and normalization for faster convergence.</li>
+                <li>Trained LSTM, EEGNET, and DSCNN+LSTM models using categorical cross-entropy and Adam optimizer.</li>
+                <li>Developing a state-of-the-art deep learning model quantifying M1 reward signals as an RL agent's reward function.</li>
+                <li>Achieved a maximum accuracy of 45% using EEGNET, closely approaching performance of SOTA models.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">LSTM</span>
+                <span class="tag">EEGNET</span>
+                <span class="tag">DSCNN+LSTM</span>
+                <span class="tag">Reinforcement Learning</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Leveraging M1 Reward Signals project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
 
-<!-- Project 4 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">Brokeo — Finance Tracking Application</a></h3>
-<span class="badge">CS253</span>
-</div>
-<div class="project-meta">
-<span>Prof. Indranil Saha</span>
-<span>·</span>
-<span>Jan 2025 – Apr 2025</span>
-</div>
-<ul class="project-desc">
-<li>Developed a finance tracking application to efficiently monitor and manage personal transactions, dues, and expenditure.</li>
-<li>Drafted SRS and Design documents detailing app requirements, design specifications, and system implementation constraints.</li>
-<li>Authored Implementation, Beta Testing, and User Manual documents including bug reports and application functionality.</li>
-<li>Designed Figma prototypes for 10 app screens incorporating comprehensive flows, responsive layouts, and interactive elements.</li>
-<li>Built Flutter front-end for analytics and merchant management pages, leveraging rich widgets to visualize transaction trends.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">Flutter</span>
-<span class="tag">Dart</span>
-<span class="tag">Figma</span>
-<span class="tag">UI/UX</span>
-<span class="tag">Documentation</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-View on GitHub
-</a>
-</div>
+            <!-- Project 2 -->
+            <div class="card project-card reveal" data-category="deeplearning bci">
+              <div class="project-card-header">
+                <h3>Mental Workload Localisation using N-Back Task</h3>
+                <span class="badge">Research</span>
+              </div>
+              <div class="project-meta">
+                <span>Prof. Arjun Ramakrishnan</span>
+                <span>·</span>
+                <span>May 2025 – Jul 2025</span>
+              </div>
+              <ul class="project-desc">
+                <li>Conducting EEG analysis to identify neural signatures across cognitive load levels, from low-demand to high-intensity tasks.</li>
+                <li>Preprocessed data by manually removing bad channels, applying Independent Component Analysis for eye artifact removal.</li>
+                <li>Produced topomaps and average band power plots for delta through gamma bands for comparative frequency-band analysis.</li>
+                <li>Plotted spectrograms for different channels estimating the effect of breaks and different mental workloads on EEG signals.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">MNE-Python</span>
+                <span class="tag">EEG</span>
+                <span class="tag">Signal Processing</span>
+                <span class="tag">Matplotlib</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Mental Workload Localisation project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
 
-<!-- Project 5 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">OpenViBE for BCI</a></h3>
-<span class="badge">Research</span>
-</div>
-<div class="project-meta">
-<span>Prof. Nikunj Arunkumar Bhagat</span>
-<span>·</span>
-<span>Sep 2024 – May 2025</span>
-</div>
-<ul class="project-desc">
-<li>Developed a real-time P300 paradigm based Brain-Computer Interface in OpenViBE, processing 100+ EEG samples/sec.</li>
-<li>Leveraged MATLAB and Lab Streaming Layer (LSL) to stream real-time EEG data into OpenViBE for a P300 Speller paradigm.</li>
-<li>Applied custom Lua scripts within OpenViBE to enhance control and efficiency of the target letter generation processes.</li>
-<li>Explored OpenViBE–Arduino communication interface to stream real-time BCI outputs to the microcontroller.</li>
-<li>Integrating Python into OpenViBE's pipeline to enable flexible, customizable EEG signal processing and predictions.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">OpenViBE</span>
-<span class="tag">MATLAB</span>
-<span class="tag">Lua</span>
-<span class="tag">Python</span>
-<span class="tag">Arduino</span>
-<span class="tag">LSL</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-External Link
-</a>
-</div>
+            <!-- Project 3 -->
+            <div class="card project-card reveal" data-category="systems hardware">
+              <div class="project-card-header">
+                <h3>IITK Mini MIPS — A Mini Processor</h3>
+                <span class="badge">CS220</span>
+              </div>
+              <div class="project-meta">
+                <span>Prof. Debapriya Basu Roy</span>
+                <span>·</span>
+                <span>Mar 2025 – Apr 2025</span>
+              </div>
+              <ul class="project-desc">
+                <li>Designed instruction and data memory, and instruction decoder on FPGA with Verilog HDL, optimizing system performance.</li>
+                <li>Implemented a 32-bit ALU in Verilog, supporting arithmetic, logical, shift, and jump operations as per the MIPS-32 ISA.</li>
+                <li>Developed a structured data path and control logic, incorporating a finite state machine for efficient instruction execution.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Verilog</span>
+                <span class="tag">FPGA</span>
+                <span class="tag">MIPS-32</span>
+                <span class="tag">Digital Design</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View IITK Mini MIPS project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
 
-<!-- Project 6 -->
-<div class="card project-card reveal">
-<div class="project-card-header">
-<h3><a href="#" onclick="return false;">DeepFake Detection</a></h3>
-<span class="badge">BCS Club</span>
-</div>
-<div class="project-meta">
-<span>Brain and Cognitive Science Club, IITK</span>
-<span>·</span>
-<span>Sep 2024 – Oct 2024</span>
-</div>
-<ul class="project-desc">
-<li>Developed a deepfake detection system implementing DeepFakeNet using PyTorch to enhance integrity of multimedia content.</li>
-<li>Studied existing literature on usage of CNNs, MesoNet, Residual Networks (ResNets), ResNeXts in deepfake detection.</li>
-<li>Compiled a comprehensive dataset of over 10,000 natural and manipulated face images ensuring balanced class distribution.</li>
-<li>Implemented flips, rotation, and scaling augmentations to improve model generalization, boosting validation accuracy to 93%.</li>
-</ul>
-<div class="project-tags">
-<span class="tag">Python</span>
-<span class="tag">PyTorch</span>
-<span class="tag">CNN</span>
-<span class="tag">OpenCV</span>
-<span class="tag">Deep Learning</span>
-<span class="tag">Computer Vision</span>
-</div>
-<a href="#" class="project-link" onclick="return false;">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-View on GitHub
-</a>
-</div>
+            <!-- Project 4 -->
+            <div class="card project-card reveal" data-category="software app">
+              <div class="project-card-header">
+                <h3>Brokeo — Finance Tracking Application</h3>
+                <span class="badge">CS253</span>
+              </div>
+              <div class="project-meta">
+                <span>Prof. Indranil Saha</span>
+                <span>·</span>
+                <span>Jan 2025 – Apr 2025</span>
+              </div>
+              <ul class="project-desc">
+                <li>Developed a finance tracking application to efficiently monitor and manage personal transactions, dues, and expenditure.</li>
+                <li>Drafted SRS and Design documents detailing app requirements, design specifications, and system implementation constraints.</li>
+                <li>Authored Implementation, Beta Testing, and User Manual documents including bug reports and application functionality.</li>
+                <li>Designed Figma prototypes for 10 app screens incorporating comprehensive flows, responsive layouts, and interactive elements.</li>
+                <li>Built Flutter front-end for analytics and merchant management pages, leveraging rich widgets to visualize transaction trends.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Documentation</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Brokeo project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
 
-</div>
-</div>
-</section>
+            <!-- Project 5 -->
+            <div class="card project-card reveal" data-category="deeplearning bci systems">
+              <div class="project-card-header">
+                <h3>OpenViBE for BCI</h3>
+                <span class="badge">Research</span>
+              </div>
+              <div class="project-meta">
+                <span>Prof. Nikunj Arunkumar Bhagat</span>
+                <span>·</span>
+                <span>Sep 2024 – May 2025</span>
+              </div>
+              <ul class="project-desc">
+                <li>Developed a real-time P300 paradigm based Brain-Computer Interface in OpenViBE, processing 100+ EEG samples/sec.</li>
+                <li>Leveraged MATLAB and Lab Streaming Layer (LSL) to stream real-time EEG data into OpenViBE for a P300 Speller paradigm.</li>
+                <li>Applied custom Lua scripts within OpenViBE to enhance control and efficiency of the target letter generation processes.</li>
+                <li>Explored OpenViBE–Arduino communication interface to stream real-time BCI outputs to the microcontroller.</li>
+                <li>Integrating Python into OpenViBE's pipeline to enable flexible, customizable EEG signal processing and predictions.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">OpenViBE</span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">Lua</span>
+                <span class="tag">Python</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">LSL</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View OpenViBE for BCI project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+                GitHub Repository
+              </a>
+            </div>
 
-</div>
+            <!-- Project 6 -->
+            <div class="card project-card reveal" data-category="deeplearning">
+              <div class="project-card-header">
+                <h3>DeepFake Detection</h3>
+                <span class="badge">BCS Club</span>
+              </div>
+              <div class="project-meta">
+                <span>Brain and Cognitive Science Club, IITK</span>
+                <span>·</span>
+                <span>Sep 2024 – Oct 2024</span>
+              </div>
+              <ul class="project-desc">
+                <li>Developed a deepfake detection system implementing DeepFakeNet using PyTorch to enhance integrity of multimedia content.</li>
+                <li>Studied existing literature on usage of CNNs, MesoNet, Residual Networks (ResNets), ResNeXts in deepfake detection.</li>
+                <li>Compiled a comprehensive dataset of over 10,000 natural and manipulated face images ensuring balanced class distribution.</li>
+                <li>Implemented flips, rotation, and scaling augmentations to improve model generalization, boosting validation accuracy to 93%.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">CNN</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+              <a href="https://github.com/Bhavnoor-Coders-1010" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View DeepFake Detection project on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
 
-<!-- ===== Footer ===== -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<p>Designed & built by Bhavnoor Singh — © <span id="year"></span></p>
-<div class="footer-links">
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-</div>
-</footer>
-</div>
+          </div>
+        </div>
+      </section>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="js/main.js"></script>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Designed & built by Bhavnoor Singh — &copy; <span id="year"></span></p>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

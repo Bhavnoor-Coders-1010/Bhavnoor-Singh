@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhavnoor-coders-1010.github.io/Bhavnoor-Singh/sitemap.xml
+
