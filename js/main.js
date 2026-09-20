@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const mailtoSubject = subject || 'Portfolio Contact from ' + name;
       const mailtoBody = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
       const mailtoLink =
-        'mailto:singh.bhavnoor.4854@gmail.com?subject=' +
+        'mailto:bhavnoor23@iitk.ac.in?subject=' +
         encodeURIComponent(mailtoSubject) +
         '&body=' +
         encodeURIComponent(mailtoBody);
@@ -307,7 +307,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
 
 
 
